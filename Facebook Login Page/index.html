@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Dhruv Clone</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .main .text{
+            position: relative;
+            bottom: 95px;
+            padding: 15px;
+        }
+        .main .text img{
+            width: 330px;
+            position: relative;
+            right: 36px;
+        }
+        .main .text p{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 22px;
+        }
+        .form{
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            width: 370px;
+            height: 360px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            position: relative;
+            bottom: 30px;
+            text-align: center;
+            box-shadow: 0px 5px 25px -10px grey;
+        }
+        .form form[action="login.php"]{
+            position: relative;
+            left: 28px;
+            top: 16px;
+        }
+        .form form[action="login.php"] input, .form form[action="login.php"] button{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            display: block;
+            width: 300px;
+            height: 47px;
+            border: grey 1px solid;
+            border-radius: 5px;
+            margin: 13px 0px;
+            caret-color: #166fe5;
+        }
+        .form form[action="login.php"] input{
+            font-size: 15px;
+            padding: 0px 5px;
+            outline: none;
+            box-shadow: grey 0px 0px 1.3px inset;
+        }
+        .form form[action="login.php"] input:focus{
+            border: #166fe5 1px solid;
+            box-shadow: #166fe5 0px 0px 2px;
+        }
+        .form form[action="login.php"] button{
+            font-size: 17px;
+            width: 310px;
+            background-color: #166fe5;
+            color: white;
+            cursor: pointer;
+        }
+        .form form[action="login.php"] button:hover{
+            background-color: #125ab9;
+        }
+        .form a{
+            text-decoration: none;
+            color: blue;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        #newAccount{
+            color: white;
+            background-color: rgb(66, 183, 42);
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            position: relative;
+            top: 86px;
+        }
+        #newAccount:hover{
+            background-color: rgb(59, 167, 37);
+        }
+        #PageLink{
+            position: absolute;
+            top: 524px;
+            font-size: 15px;
+            right: 257px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        /* #PageLink a{
+            text-decoration: none;
+        } */
+        #forgotten_password{
+            font-size: 15px;
+            position: relative;
+            top: 21px;
+        }
+        hr{
+            background-color: grey;
+            height: 0.1px;
+            width: 320px;
+            position: relative;
+            left: 24px;
+            top: 46px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="text">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook">
+            <p>Facebook helps you connect and share with the people in your life.<br>But ab nahi chalega.</p>
+        </div>
+        <div class="form">
+            <form action="login.php">
+                <input type="email or phone" placeholder="Enter email or phone number">
+                <input type="password" placeholder="Password">
+                <button type="submit"><b>Log in</b></button>
+            </form>
+            <a id="forgotten_password" href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQ1OTQxOTgzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">Forgotten password?</a>
+            <hr>
+            <a id="newAccount" href="#"><b>Create New Account</b></a>
+        </div>
+        <p id="PageLink"><a href="#"><b>Create a page</b></a> for a celebrity, brand or bisuness.</p>
+    </section>
+</body>
+
+</html>
